@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*content*/
+
+body,
+html {
+    overflow-x: hidden;
+    height: 100%
+}
+.swiper-container{
+    background: -moz-linear-gradient(top, #fc224f 0%, #fc224f 50%,#f5a352 60%,#f5a352 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc224f), color-stop(50%,#fc224f),color-stop(60%,#f5a352),color-stop(100%,#f5a352));
+    background: -webkit-linear-gradient(top, #fc224f 0%,#fc224f 50%,#f5a352 60%,#f5a352 100%);
+    background: -o-linear-gradient(top, #fc224f 0%,#fc224f 50%,#f5a352 60%,#f5a352 100%);
+    background: -ms-linear-gradient(top, #fc224f 0%,#fc224f 50%,#f5a352 60%,#f5a352 100%);
+    background: linear-gradient(to bottom, #fc224f 0%,#fc224f 50%,#f5a352 60%,#f5a352 100%);	
+}
+#swiper-container1 {
+    background-size: 100% 100%
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hide {
+    display: none
+}
+
+
+.fyWraper {
+    position: relative;
+}
+
+.pg1{
+	background-image: url(../images/bg1.jpg);
+	background-size:100% 100%;
+}
+.pgIn1{
+    position:relative;
+    width:100%;
+    height:100%;
+	background:url(../images/pg1_1.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+	text-align: center;
+}
+.qrBox{
+	position: absolute;
+	width:100%;
+	bottom:13%;
+	left:0;
+	text-align:center;
+}
+.qrBox img{
+	width:42.13%;
+	margin:0 auto;
+	margin:0 auto;
+}
+.p1{
+	position:absolute;
+	bottom:9.5%;
+	left:0;
+	width:100%;
+	font-size:15px;
+	color:#aa0707;
+	font-weight:800;
+	text-align:center;
+}
+.p2{
+	position:absolute;
+	bottom:6.5%;
+	left:0;	
+	width:100%;
+	font-size:13px;
+	color:#1a1a1a;
+	text-align:center;
+}
+.p2 span{
+	font-size:14px;
+	font-weight:800;
+	color:#aa0707;
+}
+.p3{
+	position:absolute;
+	bottom:68%;
+	left:0;		
+	width:100%;
+	font-size:13px;
+	color:#1a1a1a;
+	text-align:center;
+}
+.p3 span{
+	font-size:14px;
+	font-weight:800;
+	color:#fff;
+}
+.qrBoxLast{
+	position:absolute;
+	bottom:29%;
+	left:0;	
+	width:100%;
+	text-align:center;
+}
+.qrBoxLast img{
+	width:45.6%;
+	margin:0 auto;
+}
+.pg2{
+	background-image: url(../images/bg2.jpg);
+	background-size:100% 100%;
+}
+.pgIn2{
+    position:relative;
+    width:100%;
+    height:100%;
+	background:url(../images/pg2_1.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+.pg3{
+	background-image: url(../images/bg3.jpg);
+	background-size:100% 100%;
+}
+.pgIn3{
+    position:relative;
+    width:100%;
+    height:100%;
+	background:url(../images/pg3_1.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+.pg4{
+	background-image: url(../images/bg4.jpg);
+	background-size:100% 100%;
+}
+.pgIn4{
+    position:relative;
+    width:100%;
+    height:100%;
+	background:url(../images/pg4_1.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+.pg5{
+	background-image: url(../images/bg5.jpg);
+	background-size:100% 100%;
+}
+.pgIn5{
+    position:relative;
+    width:100%;
+    height:100%;
+	background:url(../images/pg5_1.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+
+/* 1x1 */
+.swiperModule5 {
+    top: 35%;
+}
+
+/*右侧导航*/
+#pagination1 {
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 20%;
+    width: 15px;
+}
+/* 下一页提示 */
+.next {
+  width: 20%;
+  height: 30px;
+  margin: 0 auto;
+  left: 40%;
+  bottom: 0;
+  position: absolute
+}
+.next img {
+  -webkit-animation: .5s .5s ease infinite alternate;
+  -webkit-animation-name: sldearrow;
+  -moz-animation: .5s .5s ease infinite alternate;
+  -moz-animation-name: sldearrow;
+  animation: .5s .5s ease infinite alternate;
+  animation-name: sldearrow;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  bottom: 6px;
+  display: block;
+  margin: 0 auto
+}
+@-webkit-keyframes sldearrow {
+  0% {
+    bottom: 0;
+    opacity: 1
+  }
+  100% {
+    bottom: 6px;
+    opacity: .6
+  }
+}
+@-moz-keyframes sldearrow {
+  0% {
+    bottom: 0;
+    opacity: 1
+  }
+  100% {
+    bottom: 6px;
+    opacity: .6
+  }
+}
+@keyframes sldearrow {
+  0% {
+    bottom: 0;
+    opacity: 1
+  }
+  100% {
+    bottom: 6px;
+    opacity: .6
+  }
+}

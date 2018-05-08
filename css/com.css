@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* common*/
+*{-webkit-tap-highlight-color: rgba(0,0,0,0)}
+body {height:100%;  font: 12px/1.75  \5FAE\8F6F\96C5\9ED1;}
+div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
+header, section, footer, aside, nav, article, figure, figcaption {display: block;}
+table {border-collapse:collapse;}
+img {border:none;}
+ul, li {list-style:none;}
+input:focus, textarea:focus {outline:none;}
+.cf:before,.cf:after{content:"";display:table;}.cf:after{clear:both;}.cf{zoom:1;}
+.clear{height:0px; line-height:0px;clear:both;font-size:1px;}
+body,a,a:link{color:#666;}
+a,a:link{text-decoration:none;}
+a:hover{color:red;text-decoration:underline;}
+.wraper {width:100%;max-width:720px;height: 100%;margin:auto;}
+.hide{display: none}
+.ctl{float:left;}
+.ctr{float:right;}
+.noScroll{width: 100%;height: 100%;overflow: hidden}
+
+
+/* 1x1 */
+.swiperModule5 {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0
+}
+.swiperModule5 .swiper {
+  width: 244px;
+  height: 220px;
+  margin: 0 auto;
+}
+.swiperModule5 .imgBox {
+  width: 244px;
+  height: 200px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+.swiperModule .pagination {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 0%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 3px;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+
+
+/*适配ie6 plus*/
+@media only screen and (min-width:414px) {
+  .swiperModule5 .swiper {
+    width: 300px;
+    height: 260px;
+  }
+  .swiperModule5 .swiper .imgBox {
+    width: 300px;
+    height: 240px
+  }
+}
+
+/*适配第一等级短胖*/
+@media only screen and (max-height:520px) {
+  .swiperModule5 .swiper {
+    width: 200px;
+    height: 180px;
+  }
+  .swiperModule5 .swiper .imgBox {
+    width: 200px;
+    height: 160px;
+  }
+}
+
+/*适配第二等级短胖*/
+@media only screen and (max-height:440px) {
+  .swiperModule5 .swiper {
+    width: 169px;
+    height: 155px;
+  }
+  .swiperModule5 .swiper .imgBox {
+    width: 169px;
+    height: 135px;
+  }
+}
+
+/*通用适配奇葩安卓短胖*/
+.fat .swiperModule5 .swiper {
+  width: 169px;
+  height: 155px;
+}
+.fat .swiperModule5 .swiper .imgBox {
+  width: 169px;
+  height: 135px;
+}
+
+/*高度小于弹窗高度时*/
+@media only screen and (max-height:370px) {
+  .bmWarp {
+    margin-top: -20px;
+  }
+}
+
+/* swiper layout */
+.swiper-slide {
+  overflow-x: hidden;
+  height: 100%
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  margin: 0 auto
+}
+.swiper-slide {
+  width: 100%;
+  float: left;
+  position: relative
+}
+.container {
+  margin: 0 auto;
+  position: relative
+}
+
+/*Basic Swiper Styles */
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0, 0);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: ease
+}
+.swiper-free-mode>.swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto
+}
+.swiper-slide {
+  float: left
+}
+.swiper-pages {
+  height: 100%
+}
+.scroll-container {
+  height: 100%;
+  width: 100%
+}
+.scroll-container .swiper-slide {
+  width: 100%
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
